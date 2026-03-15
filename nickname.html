@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nickname Generator</title>
+
+<style>
+
+body{
+font-family:Arial;
+text-align:center;
+background:#f4f4f4;
+margin:0;
+}
+
+nav{
+background:#333;
+padding:15px;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+}
+
+button{
+padding:10px 20px;
+font-size:16px;
+margin-top:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="password.html">Password Generator</a>
+<a href="nickname.html">Nickname Generator</a>
+<a href="ideas.html">Idea Generator</a>
+</nav>
+
+<h1>Nickname Generator</h1>
+
+<button onclick="generateNick()">Generate Nickname</button>
+
+<p id="nick"></p>
+
+<script>
+
+let first=[
+"Shadow",
+"Dark",
+"Fire",
+"Ice",
+"Silent",
+"Crazy",
+"Ghost"
+];
+
+let second=[
+"Wolf",
+"Dragon",
+"Tiger",
+"Sniper",
+"Ninja",
+"Hunter",
+"Blade"
+];
+
+function generateNick(){
+
+let name=
+first[Math.floor(Math.random()*first.length)] +
+second[Math.floor(Math.random()*second.length)] +
+Math.floor(Math.random()*100);
+
+document.getElementById("nick").innerText=name;
+
+}
+
+</script>
+
+</body>
+</html>

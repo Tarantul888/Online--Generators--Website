@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online Generators</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:linear-gradient(135deg,#4facfe,#00f2fe);
+min-height:100vh;
+color:white;
+}
+
+nav{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:20px;
+background:rgba(0,0,0,0.2);
+backdrop-filter:blur(10px);
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:18px;
+font-weight:bold;
+}
+
+nav a:hover{
+opacity:0.7;
+}
+
+.container{
+text-align:center;
+margin-top:120px;
+}
+
+h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+p{
+font-size:20px;
+opacity:0.9;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:60px;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+color:black;
+padding:30px;
+border-radius:15px;
+width:220px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card a{
+text-decoration:none;
+color:#4facfe;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="password.html">Passwords</a>
+<a href="nickname.html">Nicknames</a>
+<a href="ideas.html">Ideas</a>
+</nav>
+
+<div class="container">
+
+<h1>Online Generators</h1>
+
+<p>Free tools to generate passwords, nicknames and ideas</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>Password Generator</h3>
+<p>Create strong secure passwords</p>
+<br>
+<a href="password.html">Open</a>
+</div>
+
+<div class="card">
+<h3>Nickname Generator</h3>
+<p>Create cool gaming nicknames</p>
+<br>
+<a href="nickname.html">Open</a>
+</div>
+
+<div class="card">
+<h3>Idea Generator</h3>
+<p>Generate random project ideas</p>
+<br>
+<a href="ideas.html">Open</a>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
